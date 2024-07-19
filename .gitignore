@@ -1,0 +1,26 @@
+# Mengabaikan file yang dihasilkan sistem operasi
+.DS_Store
+Thumbs.db
+
+_py__pycache__/
+# Mengabaikan file log
+*.log
+
+# Mengabaikan direktori build
+build/
+
+# Mengabaikan file sementara editor teks
+*~
+
+# Mengabaikan file Python virtual environment
+venv-flask/
+
+# Mengabaikan file konfigurasi lokal
+config/local_settings.py
+
+# Mengabaikan file Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+
+# Mengabaikan file di dalam direktori temp
+temp/

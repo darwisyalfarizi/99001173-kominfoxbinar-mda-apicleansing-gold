@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Clean Text{% endblock %}
+
+
+{% block content %}
+<center>
+    <div class="content">
+    <h1>Input Text for Cleansing</h1>
+    <br>
+    <form action="/clean_text_form" method="post">
+        <label for="text">Text: </label><br><br>
+        <textarea name="text" rows="5" cols="50"></textarea>
+        <br>
+        <button type="submit">Clean Text</button>
+    </form>
+<br>
+
+
+<hr>
+<br>
+    <h1>Upload CSV File</h1>
+    <br>
+    <form action="/upload_form" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    </div>
+</center>
+    {% endblock %}

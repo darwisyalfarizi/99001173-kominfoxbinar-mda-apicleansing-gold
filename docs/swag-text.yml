@@ -1,0 +1,31 @@
+tags:
+  - name: "Input Text"
+    description: "Text you want to cleanse |  "
+
+
+
+post:
+  summary: "Clean the provided text"
+  description: "Clean the provided text using various cleansing operations"
+  consumes:
+    - application/x-www-form-urlencoded
+parameters:
+    - in: formData
+      name: text
+      type: string
+      required: true
+      description: "The text to be cleaned"
+responses:
+    200:
+      description: "Successful response"
+      schema:
+        type: object
+        properties:
+          original_text:
+            type: string
+          cleaned_text:
+            type: string
+    400:
+      description: "Bad request"
+    500:
+      description: "Internal Server Error"

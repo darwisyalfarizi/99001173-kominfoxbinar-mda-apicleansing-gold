@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Clean Text{% endblock %}
+
+
+{% block content %}
+
+
+    <h1>File uploaded and processed successfully!</h1>
+    <br>
+    <a href="{{ url_for('download_file', filename=download_url) }}">Download Cleansed File</a>
+
+
+{% endblock %}

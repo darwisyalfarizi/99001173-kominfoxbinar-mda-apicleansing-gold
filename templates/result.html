@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Clean Text Result{% endblock %}
+
+{% block content %}
+    <h1>Clean Text Result</h1>
+    <br>
+    <p><strong>Original Text:</strong></p>
+    <p>{{ original_text }}</p>
+    <br><br>
+    <p><strong>Cleaned Text:</strong></p>
+    <p>{{ cleaned_text }}</p>
+    <br><br>
+    <a href="/">Back</a>
+{% endblock %}

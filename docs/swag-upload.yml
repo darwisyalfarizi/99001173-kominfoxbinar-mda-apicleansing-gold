@@ -1,0 +1,28 @@
+tags:
+  - name: "File Upload"
+    description: "File you want to cleanse |  "
+post:
+  summary: "Upload a file for cleansing"
+  description: "Upload a CSV file to be cleansed"
+  consumes:
+    - multipart/form-data
+parameters:
+    - in: formData
+      name: file
+      type: file
+      required: true
+      description: "The CSV file to be uploaded"
+responses:
+    200:
+      description: "File uploaded and processed successfully"
+      schema:
+        type: object
+        properties:
+          message:
+            type: string
+          download_url:
+            type: string
+    400:
+      description: "Bad request"
+    500:
+      description: "Internal Server Error"
